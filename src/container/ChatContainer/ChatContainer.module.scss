@@ -1,0 +1,35 @@
+@import '../../app/constant.module.scss';
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 100%;
+    padding: 20px 39px 20px 29px;
+}
+.searchContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 58px;
+    height: 32px;
+    align-items: center;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    gap: 8px;
+}
+.input{
+    background-color: transparent;
+    border: none;
+    color: $black;
+    width: 100%;
+}
+.input:focus{
+    outline: none;
+}
+.buttonSearch{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    svg>path{
+        fill: $black;
+    }
+}

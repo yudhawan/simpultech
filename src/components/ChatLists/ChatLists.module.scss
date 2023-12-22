@@ -1,0 +1,94 @@
+@import '../../app/constant.module.scss';
+.main{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.liContainer{
+    border-bottom: 1px solid $gray-3;
+    padding: 23px 22px 32px 0px;
+}
+.liContainer:first-child{
+    padding-top: 0px;
+}
+.liContainer:last-child{
+    border-bottom: none;
+}
+.listContainer{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    gap: 17px;
+    
+    cursor: pointer;
+}
+.userIconContainer{
+    width: 51px;
+    height: 34px;
+    position: relative;
+}
+.userIcon{
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: $gray-2;
+    justify-content: center;
+    align-items: center;
+    svg>g>path{
+        fill: $black;
+    }
+}
+.userIconBlue{
+    position: absolute;
+    right: 0;
+    display: flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: $blue;
+    justify-content: center;
+    align-items: center;
+    svg>g>path{
+        fill: white;
+    }
+}
+.infoBlockContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.infoBlockContainerTitle{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    color: $gray-3;
+    text-align: left;
+    h4{
+        color: $blue;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        width: 300px;
+    }
+    span{
+        white-space: nowrap;
+    }
+}
+.infoBlockChatContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    color: $black;
+}
+.infoLastChat{
+    display: flex;
+    gap: 16px;
+    p{
+        font-weight: 600;
+    }
+}

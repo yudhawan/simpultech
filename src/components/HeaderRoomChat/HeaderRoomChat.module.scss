@@ -1,0 +1,31 @@
+@import '../../app/constant.module.scss';
+.infoHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 21px 18px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.infoTitle{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.buttonSet{ 
+    @include defaultButton;
+    width: unset;
+    height: unset;
+}
+.headerInfo{
+    display: flex;
+    flex-direction: column;
+    h4{
+        margin: 0;
+        color: $blue;
+        font-weight: 600;
+    }
+    span{
+        font-size: 12px;
+    }
+}

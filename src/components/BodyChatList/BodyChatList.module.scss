@@ -1,0 +1,134 @@
+@import '../../app/constant.module.scss';
+
+.main{
+    width: 100%;
+    height: calc(737px - 73px - 59px);
+    padding: 12px 19px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    overflow-y: scroll;
+    li{
+        width: fit-content;
+        max-width: 518px;
+        gap: 4px;
+    }
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.name{
+    color: $yellow;
+    font-size: 12px;
+}
+.contentContainer{
+    
+    display: flex;
+    gap: 10px;
+}
+.content{
+    border-radius: 6px;
+    background-color: $yellow-2;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: fit-content;
+}
+.menuButton{
+    background-color: transparent;
+    border: unset;
+    cursor: pointer;
+    align-self: baseline;
+    position: relative;
+}
+
+.nameRight{
+    color: $yellow;
+    font-size: 12px;
+}
+.contentContainerRight{
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+.contentRight{
+    border-radius: 6px;
+    background-color: $purple-2;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+    height: fit-content;
+}
+.menuButtonRight{
+    background-color: transparent;
+    border: unset;
+    cursor: pointer;
+    align-self: baseline;
+    position: relative;
+}
+.timeFormat{
+    font-size: 10px;
+    color: gray;
+}
+.menu{
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 126px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    right:-110px;
+    background-color: white;
+}
+.menuList{
+    border-bottom: 1px solid gray;
+    padding: 8px;
+    width: 100% !important;
+    button{
+        width: 100% !important;
+        text-align: left;
+        background-color: transparent;
+        border: unset;
+        cursor: pointer;
+    }
+}
+.menuList:last-child{
+    border-bottom: unset;
+    button{color: $red !important;}
+}
+.menuRight{
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 126px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    left: -110px;
+    background-color: white;
+}
+.menuListRight{
+    border-bottom: 1px solid gray;
+    padding: 8px;
+    width: 100% !important;
+    button{
+        width: 100% !important;
+        text-align: left;
+        background-color: transparent;
+        border: unset;
+        cursor: pointer;
+    }
+}
+.menuListRight:last-child{
+    border-bottom: unset;
+    button{color: $red !important;}
+}

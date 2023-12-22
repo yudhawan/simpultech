@@ -1,0 +1,78 @@
+@import '../../app/constant.module.scss';
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.infoHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 21px 18px;
+    border-bottom: 1px solid $gray-4;
+}
+.infoTitle{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.infoBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.buttonSet{ 
+    @include defaultButton;
+    width: unset;
+    height: unset;
+}
+.formInput{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 16px 30px;
+    height: calc(737px - 63px);
+    overflow-y: scroll;
+}
+.input{
+    width: 250px;
+    height: 48px;
+    padding: 2px 4px;
+    border: 1px solid $gray;
+    border-radius: 10px;
+}
+.input:focus{
+    border: 1px solid $blue;
+    outline: none;
+}
+.formLabelContainer{
+    display: flex;
+    flex-direction: column;
+}
+.input[type="submit"]{
+    background-color: $blue;
+    color: $gray-5;
+    font-size: 20px;
+    border: unset;
+}
+.input[type="submit"]:hover{
+    background-color: transparent;
+    color: $gray;
+    border: 1px solid $gray;
+    cursor: pointer;
+}
+.description{
+    background-color: transparent;
+    border: 1px solid $gray;
+    color: $black;
+    width: 80%;
+    height: 200px;
+    // resize: none;
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+.description:focus{
+    outline: none;
+}
+.error{
+    color: $red;
+}
